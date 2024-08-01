@@ -236,7 +236,7 @@ a{
     transition: ease-in-out 0.2s;
 }
 .button-light::after{
-    background-image: url(/week-2/image/arrow_outward-white.png);
+    background-image: url(image/arrow_outward-white.png);
 }
 .button-dark:hover::after, .button-light:hover::after{
     top: 40%;
