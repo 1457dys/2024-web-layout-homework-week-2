@@ -52,7 +52,7 @@ a{
     height: 100px;
     position:absolute;
     display: inline-block;
-    background-image:url(image/trending_flat_black_24dp\ 1.png) ;
+    background-image: url("../image/trending_flat.png");
     right:0px;
     top: 50%;/*頂部邊緣對齊到父容器的中間*/
     transform: translateY(-50%);/*向上移動自身高度的一半*/
@@ -224,7 +224,7 @@ a{
 }
 .button-dark::after,.button-light::after{
     content: "";
-    background-image: url(image/arrow_outward.svg);
+    background-image: url("../image/arrow_outward.svg");
     width: 24px;
     height: 24px;
     display: inline-block;
@@ -236,7 +236,7 @@ a{
     transition: ease-in-out 0.2s;
 }
 .button-light::after{
-    background-image: url(image/arrow_outward-white.png);
+    background-image: url("../image/arrow_outward-white.png");
 }
 .button-dark:hover::after, .button-light:hover::after{
     top: 40%;
