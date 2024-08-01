@@ -1,0 +1,245 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Castoro:ital@0;1&display=swap');
+
+body{
+    font-family: 'Bruno Ace SC', 'Noto Sans TC', 'Microsoft JhengHei', 'Arial', sans-serif;
+    line-height: 1.5;
+    text-decoration: none;
+
+}
+a{
+    text-decoration: none;
+    color: #000 ;
+}
+.container{
+    width: 1296px;
+    margin: auto;
+}
+.nav-list{
+    justify-content: space-between;
+    align-items: center;
+}
+.banner-wrapper{
+    padding-top: 72px;
+    padding-bottom: 32px;
+}
+.banner-text-wrapper{
+    flex-direction: column;
+}
+.about-wrapper{
+    flex-direction: row-reverse;
+}
+.about-text-wrapper{
+    width: 526px;
+}
+.trait-list{
+    gap:24px;
+}
+.trait-card{
+    width: 306px;
+    gap: 4px;
+    border: #E3E3E3 solid 1px;
+    box-shadow: 4px 4px 4px 0px #00000014;
+
+}
+.contact-title{
+    position: relative;
+    padding-right: 116px;
+}
+.contact-title::after{
+    content:"";
+    width: 100px;
+    height: 100px;
+    position:absolute;
+    display: inline-block;
+    background-image:url(image/trending_flat_black_24dp\ 1.png) ;
+    right:0px;
+    top: 50%;/*頂部邊緣對齊到父容器的中間*/
+    transform: translateY(-50%);/*向上移動自身高度的一半*/
+}
+.social-link{
+    box-shadow: 0px 4px 4px 0px #00000040;
+    border-radius: 40px;
+
+}
+.contact-list a:hover{
+    box-shadow: 0px 0px 16px 3px #9094FFE5;
+    border-radius: 40px;
+    transition: 0.2s;
+}
+.project-title{
+    margin-left: 550px;
+}
+.project-description-wrapper{
+    width: 636px;
+    height: 196px;
+    flex-direction: column;
+}
+.d-block{
+    display: block;
+}
+/* flex */
+.d-flex{
+    display: flex;
+}
+.fw-w{
+    flex-wrap: wrap;
+}
+.as-c{
+    align-self: center;
+}
+.as-fs{
+    align-self: flex-start;
+}
+.ai-c{
+    align-items: center;
+}
+.jc-sb{
+    justify-content: space-between;
+}
+/* width */
+.w-3{
+    width: calc((100% - 48px) / 3);
+}
+.w-6{
+    width: calc((100% - 48px) / 3 * 2 + 24px);
+}
+.w-50 {
+    width: calc(50% - 12px);
+}
+/* font-style */
+.fs-h1{
+    font-size: 128px;
+}
+.fs-h2{
+    font-size:64px;
+}
+.fs-1{
+    font-size: 32px;
+}
+.fs-2{
+    font-size: 24px;
+}
+.fs-3{
+    font-size: 20px;
+}
+.fc-p, .fc-p a, .fc-p h2{
+    color: #fff;
+}
+.fc-a{
+    color: #00ffa3;
+}
+/* spacing */
+.pt-l{
+    padding-top: 160px;
+}
+.pb-l{
+    padding-bottom: 160px;
+}
+.pt-m{
+    padding-top: 96px;
+}
+.pb-m{
+    padding-bottom: 96px;
+}
+.pt-s{
+    padding-top: 40px;
+}
+.pb-s{
+    padding-bottom: 40px;
+}
+.p-4{
+    padding: 16px;
+}
+.mt-l{
+    margin-top: 160px;
+}
+.mb-l{
+    margin-bottom: 160px;
+}
+.ml-a{
+    margin-left: auto;
+}
+.mb-9{
+    margin-bottom: 36px;
+}
+.mt-8{
+    margin-top: 32px;
+}
+.mb-7{
+    margin-bottom: 28px;
+}
+.ml-6{
+    margin-left: 24px;
+}
+.mr-6{
+    margin-right: 24px;
+}
+.mr-5{
+    margin-right: 20px;
+}
+.mb-4{
+    margin-bottom: 16px;
+}
+.mr-4{
+    margin-right: 16px;
+}
+.mr-3{
+    margin-right: 12px;
+}
+.ml-3{
+    margin-left: 12px;
+}
+/* background */
+.bg-dark{
+    background: #000;
+}
+.bg-lg{
+    background: linear-gradient(180deg, rgba(5,0,20,1) 0%, rgba(1,2,30,0.89) 100%);
+}
+
+
+.ta-c{
+    text-align: center;
+}
+
+/* button */
+.button-dark{
+    background: #fff;
+    color: #000;
+    padding: 12px 52px 12px 24px;
+    border-radius: 32px;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+}
+.button-light{
+    background: #000;
+    color: #fff;    
+    padding: 12px 52px 12px 24px;
+    border-radius: 32px;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+}
+.button-dark::after,.button-light::after{
+    content: "";
+    background-image: url(image/arrow_outward.svg);
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    position: absolute;
+    right: 24px;
+    top: 50%;/*頂部邊緣對齊到父容器的中間*/
+    transform: translateY(-50%);/*向上移動自身高度的一半*/
+    vertical-align: middle;
+    transition: ease-in-out 0.2s;
+}
+.button-light::after{
+    background-image: url(/week-2/image/arrow_outward-white.png);
+}
+.button-dark:hover::after, .button-light:hover::after{
+    top: 40%;
+    right: 18px;
+    transition: ease-in-out 0.2s;
+}
